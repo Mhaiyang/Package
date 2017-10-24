@@ -76,7 +76,7 @@ struct Entity
 class GA
 {
 public:
-	static bool EntitySort(const Entity &one, const Entity &two) { return (one.fitness < two.fitness); }
+	static bool EntitySort(const Entity &one, const Entity &two) { return (one.fitness <= two.fitness); }
 
 	static float TotalFitness(const std::vector<Entity> &group)
 	{
